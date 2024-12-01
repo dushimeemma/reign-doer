@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <div className="flex items-center justify-center w-screen h-screen">
-      <p className="text-3xl font-bold">Hello from Home</p>
+    <div className="flex w-screen min-h-screen flex-col items-center justify-center">
+      <span>hello from home</span>
     </div>
   );
 }
