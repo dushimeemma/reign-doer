@@ -1,6 +1,7 @@
 import Image from "next/image";
 import TextBadge from "@/app/components/reusable/TextBadge";
 import Button from "@/app/components/reusable/Button";
+import SeeMore from "@/app/components/reusable/SeeMore";
 
 export default function Landing() {
   return (
@@ -22,15 +23,7 @@ export default function Landing() {
           <div className="w-[11.688rem]">
             <Button>Book a free cal</Button>
           </div>
-          <button className="flex-1 flex flex-row items-center ml-6">
-            <span className="text-primary mr-2">See projects</span>
-            <Image
-              src="/arrow-next.png"
-              width={30}
-              height={30}
-              alt="arrow next"
-            />
-          </button>
+          <SeeMore />
         </div>
       </div>
       <div className="hidden lg:flex w-[50vw] h-full m-6 cursor-pointer">
