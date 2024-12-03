@@ -1,0 +1,21 @@
+"use client";
+
+import ReactPlayer from "react-player";
+import { VIDEO_URL } from "@/app/helpers/constants";
+import { VIDEO_STYLES } from "@/app/helpers/styles";
+import { VIDEO_CONFIGS } from "@/app/helpers/configs";
+
+export default function VideoPage() {
+  return (
+    <div className="h-[60vh] w-[80vw] flex items-center relative  rounded-[1.25rem] justify-center m-6">
+      <ReactPlayer
+        url={VIDEO_URL}
+        width="100%"
+        height="100%"
+        controls={true}
+        style={VIDEO_STYLES}
+        config={VIDEO_CONFIGS}
+      />
+    </div>
+  );
+}

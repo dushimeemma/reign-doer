@@ -1,6 +1,6 @@
 import Image from "next/image";
-import TextBadge from "../reusable/TextBadge";
-import Button from "../reusable/Button";
+import TextBadge from "@/app/components/reusable/TextBadge";
+import Button from "@/app/components/reusable/Button";
 
 export default function Landing() {
   return (

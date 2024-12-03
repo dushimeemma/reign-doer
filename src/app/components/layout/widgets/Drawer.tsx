@@ -11,7 +11,7 @@ import ListItemText from "@mui/material/ListItemText";
 import { navLinks } from "@/app/helpers/stub-data/nav-links";
 import Link from "next/link";
 import Logo from "./Logo";
-import Button from "../reusable/Button";
+import Button from "@/app/components/reusable/Button";
 
 interface Props {
   buttonChildren: React.ReactNode;

@@ -5,7 +5,7 @@ import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import { navLinks } from "@/app/helpers/stub-data/nav-links";
 import SideDrawer from "./Drawer";
 import Logo from "./Logo";
-import Button from "../reusable/Button";
+import Button from "@/app/components/reusable/Button";
 
 export default function Header() {
   return (
