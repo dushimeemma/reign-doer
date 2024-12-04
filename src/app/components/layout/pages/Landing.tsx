@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import TextBadge from "@/app/components/reusable/TextBadge";
 import Button from "@/app/components/reusable/Button";
 import SeeMore from "@/app/components/reusable/SeeMore";
@@ -23,7 +24,7 @@ export default function Landing() {
           <div className="w-[11.688rem]">
             <Button>Book a free cal</Button>
           </div>
-          <SeeMore />
+          <SeeMore classNames="ml-6" />
         </div>
       </div>
       <div className="hidden lg:flex w-[50vw] h-full m-6 cursor-pointer">

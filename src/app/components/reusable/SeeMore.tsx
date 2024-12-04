@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import { MouseEventHandler } from "react";
 
 interface SeeMoreProps {
@@ -16,7 +17,7 @@ export default function SeeMore({
 }: SeeMoreProps) {
   return (
     <button
-      className={`flex-1 flex flex-row items-center ml-6 ${classNames}`}
+      className={`flex-1 flex flex-row items-center ${classNames}`}
       onClick={onClick}
     >
       <span className="text-primary mr-2">{label ?? "See projects"}</span>

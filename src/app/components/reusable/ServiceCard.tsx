@@ -1,6 +1,9 @@
 import Image from "next/image";
-import SeeMore from "./SeeMore";
+
 import { MouseEventHandler } from "react";
+
+import SeeMore from "./SeeMore";
+import Title from "./Title";
 
 interface ServiceCardProps {
   title: string;
@@ -34,14 +37,9 @@ export default function ServiceCard({
         />
       </div>
       <div className={`flex-1 flex flex-col gap-4 mx-6`}>
-        <h1 className=" text-primary text-2xl">{title}</h1>
+        <Title title={title} />
         <p className="font-light text-2xl">{description}</p>
-        <SeeMore
-          label="Read more"
-          classNames="ml-0"
-          size={24}
-          onClick={onSeeMore}
-        />
+        <SeeMore label="Read more" size={24} onClick={onSeeMore} />
       </div>
     </div>
   );
