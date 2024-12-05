@@ -7,7 +7,7 @@ import Title from "./Title";
 
 interface ServiceCardProps {
   title: string;
-  description: string;
+  description?: string;
   image: string;
   onSeeMore?: MouseEventHandler<HTMLButtonElement>;
   index?: number;
