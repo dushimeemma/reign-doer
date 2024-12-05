@@ -1,5 +1,5 @@
 import ServiceCard from "@/app/components/reusable/ServiceCard";
-import { OUR_SERVICES } from "@/app/helpers/stub-data/services";
+import { OUR_SERVICES as services } from "@/app/helpers/stub-data/services";
 import Title from "@/app/components/reusable/Title";
 import SubTitle from "@/app/components/reusable/SubTitle";
 
@@ -8,7 +8,7 @@ export default function Services() {
     <div className="m-6 min-h-screen flex flex-col w-screen items-center">
       <Title />
       <SubTitle />
-      {OUR_SERVICES.map((service, index) => (
+      {services.map((service, index) => (
         <ServiceCard
           key={service.id}
           title={service.name}
