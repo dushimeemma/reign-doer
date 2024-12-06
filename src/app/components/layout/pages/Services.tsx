@@ -5,7 +5,10 @@ import SubTitle from "@/app/components/reusable/SubTitle";
 
 export default function Services() {
   return (
-    <div className="m-6 min-h-screen flex flex-col w-screen items-center">
+    <div
+      className="m-6 min-h-screen flex flex-col w-screen items-center"
+      id="services"
+    >
       <Title />
       <SubTitle />
       {services.map((service, index) => (
