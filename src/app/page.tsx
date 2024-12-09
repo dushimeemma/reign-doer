@@ -3,6 +3,7 @@ import Landing from "./components/layout/pages/Landing";
 import Projects from "./components/layout/pages/Projects";
 import Services from "./components/layout/pages/Services";
 import Team from "./components/layout/pages/Team";
+import Testimonials from "./components/layout/pages/Testimonials";
 import Video from "./components/layout/pages/Video";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Team />
       <Projects />
       <Blogs />
+      <Testimonials />
     </div>
   );
 }

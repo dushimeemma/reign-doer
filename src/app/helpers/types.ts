@@ -22,4 +22,13 @@ type Project = {
   link?: string;
 };
 
-export type { Service, Employee, Project };
+type Testimonial = {
+  id: number;
+  from: string;
+  company: string;
+  description: string;
+  image: string;
+  link: string;
+};
+
+export type { Service, Employee, Project, Testimonial };

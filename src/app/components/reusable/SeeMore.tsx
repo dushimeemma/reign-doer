@@ -1,6 +1,5 @@
-import Image from "next/image";
-
 import { MouseEventHandler } from "react";
+import CustomIcon from "./CustomIcon";
 
 interface SeeMoreProps {
   onClick?: MouseEventHandler<HTMLButtonElement>;
@@ -21,12 +20,7 @@ export default function SeeMore({
       onClick={onClick}
     >
       <span className="text-primary mr-2">{label ?? "See projects"}</span>
-      <Image
-        src="/arrow-next.png"
-        width={size ?? 30}
-        height={size ?? 30}
-        alt="arrow next"
-      />
+      <CustomIcon size={size} />
     </button>
   );
 }
