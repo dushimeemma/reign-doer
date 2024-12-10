@@ -1,4 +1,5 @@
 import Blogs from "./components/layout/pages/Blogs";
+import Faq from "./components/layout/pages/Faq";
 import Landing from "./components/layout/pages/Landing";
 import Projects from "./components/layout/pages/Projects";
 import Services from "./components/layout/pages/Services";
@@ -16,6 +17,7 @@ export default function Home() {
       <Projects />
       <Blogs />
       <Testimonials />
+      <Faq />
     </div>
   );
 }
