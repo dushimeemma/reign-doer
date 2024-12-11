@@ -22,7 +22,7 @@ export default function Landing() {
         </div>
         <div className="flex  items-center  w-full lg:w-[40vw]">
           <div className="w-[11.688rem]">
-            <Button>Book a free cal</Button>
+            <Button className="rounded-[1.875rem]">Book a free cal</Button>
           </div>
           <SeeMore classNames="ml-6" />
         </div>

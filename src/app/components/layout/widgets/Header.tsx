@@ -28,7 +28,7 @@ export default function Header() {
           <span className="text-primary mr-6">Login</span>
         </Link>
         <Link href="#home">
-          <Button>Get Started</Button>
+          <Button className="rounded-[1.875rem]">Get Started</Button>
         </Link>
       </div>
       <div className="flex lg:hidden">

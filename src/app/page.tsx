@@ -6,6 +6,7 @@ import Services from "./components/layout/pages/Services";
 import Team from "./components/layout/pages/Team";
 import Testimonials from "./components/layout/pages/Testimonials";
 import Video from "./components/layout/pages/Video";
+import Subscribe from "./components/layout/widgets/Subscribe";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Blogs />
       <Testimonials />
       <Faq />
+      <Subscribe />
     </div>
   );
 }

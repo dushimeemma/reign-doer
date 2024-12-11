@@ -22,7 +22,9 @@ export default function Projects() {
         ))}
         <div className="w-full lg:w-1/3 flex justify-center items-center">
           <Link href="#">
-            <Button className="w-[11.625rem]">View our portfolio</Button>
+            <Button className="w-[11.625rem] rounded-[1.875rem]">
+              View our portfolio
+            </Button>
           </Link>
         </div>
       </div>
