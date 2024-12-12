@@ -31,7 +31,7 @@ export default function Footer() {
       </div>
       <div className="flex flex-col my-6 lg:my-24">
         <FooterTitle label="Contact us" />
-        <SubTitle label="it@itperfect.fr" />
+        <SubTitle label="contact@itperfect.fr" />
         <SubTitle label="+33 7 51 23 98 63" />
         <FooterTitle label="Follow us" />
         <div className="flex flex-row gap-4">
