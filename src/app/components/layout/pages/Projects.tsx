@@ -8,7 +8,10 @@ import Button from "@/app/components/reusable/Button";
 
 export default function Projects() {
   return (
-    <div className="w-screen min-h-screen flex flex-col mb-6 p-6 items-center">
+    <div
+      id="projects"
+      className="w-screen min-h-screen flex flex-col mb-6 p-6 items-center mt-6"
+    >
       <Title title="Projects" />
       <SubTitle text="Our creative solution" />
       <div className="w-full  my-6 flex flex-col lg:flex-row justify-between gap-4">

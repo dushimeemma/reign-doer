@@ -6,7 +6,10 @@ import SeeMore from "@/app/components/reusable/SeeMore";
 
 export default function Blogs() {
   return (
-    <div className="w-screen min-h-screen flex flex-col items-center p-6">
+    <div
+      id="blog"
+      className="w-screen min-h-screen flex flex-col items-center p-6 mt-6"
+    >
       <Title title="Blogs" />
       <SubTitle text="Check this valuable insights" />
       <div className="w-full flex flex-col lg:flex-row justify-between my-6 gap-4">

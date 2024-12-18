@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 import { Employee } from "@/app/helpers/types";
 
@@ -14,7 +14,7 @@ interface EmployeeCardProps {
 export default function EmployeeCard({ employee }: EmployeeCardProps) {
   return (
     <div
-      className="flex flex-col w-full lg:w-1/3  rounded-[0.625rem] shadow-lg"
+      className="flex flex-col w-full lg:w-[30%] my-3  rounded-[0.625rem] shadow-lg"
       key={employee.id}
     >
       <div className="flex-1 rounded-t-[0.625rem]">
@@ -27,14 +27,14 @@ export default function EmployeeCard({ employee }: EmployeeCardProps) {
           className="rounded-t-[0.625rem]"
         />
       </div>
-      <div className=" bg-primary text-white rounded-b-[0.625rem] flex flex-row items-center justify-around gap-4">
+      <div className=" bg-primary text-white rounded-b-[0.625rem] flex flex-row items-center justify-center gap-4">
         <div className="flex flex-col gap-2 p-4">
-          <span className="font-bold">{employee.name}</span>
-          <span className="font-light">{employee.position}</span>
+          <span className="font-bold text-center">{employee.name}</span>
+          <span className="font-light text-center">{employee.position}</span>
         </div>
-        <Link href={employee.linkedIn} target="_blank">
+        {/* <Link href={employee.linkedIn} target="_blank">
           <LinkedInIcon className="cursor-pointer w-[5vw] h-[5vh]" />
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

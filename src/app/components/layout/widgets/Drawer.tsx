@@ -45,7 +45,7 @@ export default function SideDrawer({ buttonChildren }: Props) {
       <List>
         <ListItem disablePadding>
           <ListItemButton className="flex items-center capitalize">
-            <Link href="/auth">
+            <Link href="#home">
               <span className="text-primary ml-1">Login</span>
             </Link>
           </ListItemButton>
@@ -53,7 +53,7 @@ export default function SideDrawer({ buttonChildren }: Props) {
         <ListItem disablePadding>
           <ListItemButton className="flex items-center capitalize">
             <Link href="#home">
-              <Button>Get Started</Button>
+              <Button className="rounded-[1.875rem]">Get Started</Button>
             </Link>
           </ListItemButton>
         </ListItem>

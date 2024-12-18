@@ -6,7 +6,10 @@ import SeeMore from "@/app/components/reusable/SeeMore";
 
 export default function Landing() {
   return (
-    <div className="w-screen h-screen flex flex-col lg:flex-row justify-between items-start">
+    <div
+      id="home"
+      className="w-screen h-screen flex flex-col lg:flex-row justify-between items-start py-6 mt-12 lg:mt-6"
+    >
       <div className="my-auto m-6 h-[60vh] flex-1 flex flex-col items-start justify-around gap-1 lg:gap-4">
         <p className="text-6xl font-bold">
           Where <span className="text-primary">Technology</span> Meets

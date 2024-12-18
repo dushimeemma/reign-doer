@@ -24,10 +24,10 @@ export default function Footer() {
       </div>
       <div className="flex flex-col my-6 lg:my-24">
         <FooterTitle label="Other" />
-        <SubTitle label="About us" />
-        <SubTitle label="Blog" />
-        <SubTitle label="Portfolio" />
-        <SubTitle label="Career" />
+        <SubTitle label="About us" link="#team" />
+        <SubTitle label="Blog" link="#blog" />
+        <SubTitle label="Portfolio" link="#projects" />
+        <SubTitle label="Career" link="#team" />
       </div>
       <div className="flex flex-col my-6 lg:my-24">
         <FooterTitle label="Contact us" />

@@ -7,7 +7,10 @@ import { VIDEO_CONFIGS } from "@/app/helpers/configs";
 
 export default function VideoPage() {
   return (
-    <div className="h-[40vh] lg:h-[60vh] w-[90vw] lg:w-[80vw] flex items-center relative  rounded-[1.25rem] justify-center m-6">
+    <div
+      id="home"
+      className="h-[40vh] lg:h-[60vh] w-[90vw] lg:w-[80vw] flex items-center relative  rounded-[1.25rem] justify-center m-6"
+    >
       <ReactPlayer
         url={VIDEO_URL}
         width="100%"

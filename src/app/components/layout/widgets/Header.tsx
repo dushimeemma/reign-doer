@@ -9,7 +9,7 @@ import Button from "@/app/components/reusable/Button";
 
 export default function Header() {
   return (
-    <header className="m-6 flex items-center justify-between">
+    <header className="flex p-3 lg:p-6 items-center justify-between fixed z-50 top-0 bg-white w-screen shadow-lg">
       <Logo />
       <nav className="hidden lg:flex">
         <ul className="flex gap-4 flex-row capitalize">
@@ -24,7 +24,7 @@ export default function Header() {
         </ul>
       </nav>
       <div className="hidden lg:flex flex-row items-center gap-3">
-        <Link href="/auth">
+        <Link href="#home">
           <span className="text-primary mr-6">Login</span>
         </Link>
         <Link href="#home">
