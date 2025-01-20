@@ -8,13 +8,13 @@ export default function Blogs() {
   return (
     <div
       id="blog"
-      className="w-screen min-h-screen flex flex-col items-center p-6 mt-6"
+      className="w-full min-h-screen flex flex-col items-center p-6 mt-6"
     >
       <Title title="Blogs" />
       <SubTitle text="Check this valuable insights" />
       <div className="w-full flex flex-col lg:flex-row justify-between my-6 gap-4">
         <Blog
-          classNames="flex-col justify-center  w-full lg:w-1/2 "
+          classNames="flex-col justify-center  w-full lg:w-1/2"
           textClassNames="w-full lg:w-[32vw] font-medium text-center"
           image={blogs[0].image}
           imageAlt={blogs[0].imageAlt}
@@ -23,21 +23,24 @@ export default function Blogs() {
           minutes={blogs[0].minutes}
         />
         <div className="flex flex-col  w-full lg:w-1/2 gap-4">
-          {blogs.slice(1, 4).map((blog) => (
-            <Blog
-              key={blog.id}
-              image={blog.image}
-              imageAlt={blog.imageAlt}
-              description={blog.description}
-              month={blog.month}
-              minutes={blog.minutes}
-              classNames="flex-col lg:flex-row items-center"
-              imageClassNames="w-full"
-              textClassNames=" text-center lg:text-start"
-              widthSize={280}
-              heightSize={179}
-            />
-          ))}
+          {blogs
+            .slice(2, 4)
+            .reverse()
+            .map((blog) => (
+              <Blog
+                key={blog.id}
+                image={blog.image}
+                imageAlt={blog.imageAlt}
+                description={blog.description}
+                month={blog.month}
+                minutes={blog.minutes}
+                classNames="flex-col lg:flex-row items-center"
+                textClassNames=" text-center lg:text-start"
+                widthSize={280}
+                heightSize={179}
+                layout="fixed"
+              />
+            ))}
           <SeeMore label="Read more blogs" classNames="self-end" />
         </div>
       </div>

@@ -14,6 +14,7 @@ interface BlogProps {
   classNames?: string;
   imageClassNames?: string;
   textClassNames?: string;
+  layout?: string;
 }
 
 export default function Blog({
@@ -27,6 +28,7 @@ export default function Blog({
   textClassNames,
   widthSize,
   heightSize,
+  layout,
 }: BlogProps) {
   return (
     <div className={`flex cursor-pointer ${classNames}`}>
@@ -35,7 +37,8 @@ export default function Blog({
         width={widthSize ?? 585}
         height={heightSize ?? 585}
         alt={imageAlt ?? "Blog Image"}
-        className={`w-full ${imageClassNames}`}
+        layout={layout ?? "responsive"}
+        className={`rounded-[1.5rem] ${imageClassNames}`}
       />
       <div className="flex flex-col">
         <Description

@@ -10,10 +10,10 @@ export default function Logo({ className }: LogoProps) {
     <Link href="/">
       <Image
         src="/logo.png"
-        width={250}
-        height={100}
+        width={500}
+        height={250}
         alt="Picture of the author"
-        className={` cursor-pointer w-[5.625rem] md:w-[10.625rem] lg:w-[15.625rem] ${className}`}
+        className={`cursor-pointer w-[15.625rem] md:w-[10.625rem] lg:w-[25.625rem] ${className}`}
       />
     </Link>
   );

@@ -1,6 +1,6 @@
 const VIDEO_CONFIGS = {
   youtube: {
-    playerVars: { showinfo: 1 },
+    playerVars: { showinfo: 0 },
   },
 };
 

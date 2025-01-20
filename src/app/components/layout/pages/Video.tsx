@@ -5,14 +5,17 @@ import { VIDEO_URL } from "@/app/helpers/constants";
 import { VIDEO_STYLES } from "@/app/helpers/styles";
 import { VIDEO_CONFIGS } from "@/app/helpers/configs";
 
-export default function VideoPage() {
+export default function VideoPage({
+  videoUrl,
+  classNames,
+}: {
+  videoUrl?: string;
+  classNames?: string;
+}) {
   return (
-    <div
-      id="home"
-      className="h-[40vh] lg:h-[60vh] w-[90vw] lg:w-[80vw] flex items-center relative  rounded-[1.25rem] justify-center m-6"
-    >
+    <div id="home" className={`${classNames}`}>
       <ReactPlayer
-        url={VIDEO_URL}
+        url={videoUrl ?? VIDEO_URL}
         width="100%"
         height="100%"
         controls={true}

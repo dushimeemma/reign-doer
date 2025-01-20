@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
@@ -12,6 +13,7 @@ import { navLinks } from "@/app/helpers/stub-data/nav-links";
 import Link from "next/link";
 import Logo from "./Logo";
 import Button from "@/app/components/reusable/Button";
+import { SignedIn, SignInButton, UserButton } from "@clerk/nextjs";
 
 interface Props {
   buttonChildren: React.ReactNode;
@@ -19,6 +21,8 @@ interface Props {
 
 export default function SideDrawer({ buttonChildren }: Props) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const isDashboard = pathname === "/dashboard";
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
@@ -26,7 +30,10 @@ export default function SideDrawer({ buttonChildren }: Props) {
 
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
-      <Logo className="m-6 ml-3 bg-white" />
+      <div className="pr-6">
+        <Logo className="m-6 ml-3 bg-white" />
+      </div>
+
       <Divider />
       <List>
         {navLinks.map((link) => (
@@ -40,13 +47,27 @@ export default function SideDrawer({ buttonChildren }: Props) {
             </Link>
           </ListItem>
         ))}
+        <ListItem disablePadding>
+          <SignedIn>
+            <div className="hidden lg:flex flex-row items-center gap-3">
+              <Link href={isDashboard ? "/" : "/"}>
+                <Button className="rounded-[1.875rem]">
+                  {isDashboard ? "Home" : "Dashboard"}
+                </Button>
+              </Link>
+              <UserButton />
+            </div>
+          </SignedIn>
+        </ListItem>
       </List>
       <Divider />
       <List>
         <ListItem disablePadding>
           <ListItemButton className="flex items-center capitalize">
             <Link href="#home">
-              <span className="text-primary ml-1">Login</span>
+              <span className="text-primary mr-6">
+                <SignInButton mode="modal" />
+              </span>
             </Link>
           </ListItemButton>
         </ListItem>

@@ -14,9 +14,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="flex w-screen min-h-screen flex-col items-center justify-center">
+      <div className="flex w-full min-h-screen flex-col items-center justify-center">
         <Landing />
-        <Video />
+        <Video classNames="h-[40vh] lg:h-[60vh] w-[90vw] lg:w-[80vw] flex items-center relative  rounded-[1.25rem] justify-center m-6 shadow-md" />
         <Services />
         <Team />
         <Projects />

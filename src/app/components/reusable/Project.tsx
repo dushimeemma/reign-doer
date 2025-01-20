@@ -17,7 +17,7 @@ export default function ProjectCard({
   return (
     <Link
       href={project.link ?? "#"}
-      className={`w-full lg:w-1/2  rounded-[1.25rem] ${classNames}`}
+      className={`w-full lg:w-[49%]  rounded-[1.25rem] ${classNames}`}
     >
       <Image
         src={project.image}

@@ -2,44 +2,60 @@ import { Service } from "../types";
 
 const OUR_SERVICES: Service[] = [
   {
-    name: "Website Development",
+    name: "Construction",
     description:
-      "Transforming your digital vision into a captivating online presence with expert website development",
-    image: "/web.png",
+      "Transforming your construction vision into a remarkable reality with expert building and project management services.",
+    image: "/construction.png",
     link: "#service-1",
     id: 1,
   },
   {
-    name: "Mobile App Development",
+    name: "Building",
     description:
-      "Transforming ideas into seamless user experiences through innovative mobile app development.",
-    image: "/mobile.png",
+      "Turning your construction vision into a stunning reality with expert building and project management services.",
+    image: "/building.png",
     link: "#service-2",
     id: 2,
   },
   {
-    name: "UI/ UX Design",
+    name: "Real Estate Activities",
     description:
-      "Transforming ideas into seamless user experiences through innovative mobile and web development.",
-    image: "/design.png",
+      "Transforming properties into thriving investments through innovative real estate solutions.",
+    image: "/real-estate.png",
     link: "#service-3",
     id: 3,
   },
   {
-    name: "DevOps",
+    name: "Tourism",
     description:
-      "Streamline development, deployment, and operations with automated workflows, continuous integration, and scalable infrastructure solutions.",
-    image: "/dev-ops.png",
+      "Transforming the way you explore the world with seamless travel and tourism experiences through innovative solutions.",
+    image: "/travel.png",
     link: "#service-4",
     id: 4,
   },
   {
-    name: "Cloud Storage",
+    name: "Hardware and General Supply Solutions",
     description:
-      "Securely store, access, and share your files from anywhere with our cloud storage service.",
-    image: "/cloud-storage.png",
+      "Streamline hardware and general supply management with automated workflows, optimized procurement, and scalable distribution solutions.",
+    image: "/hardware.png",
     link: "#service-5",
     id: 5,
+  },
+  {
+    name: "Business Mentorship",
+    description:
+      "Empower your growth journey with business mentorship through strategic guidance, personalized support, and scalable solutions for success.",
+    image: "/business.png",
+    link: "#service-6",
+    id: 6,
+  },
+  {
+    name: "Logistics and Sheeping",
+    description:
+      "Streamline your operations with logistics and shipping solutions through efficient planning, reliable support, and scalable strategies for success.",
+    image: "/logistics.png",
+    link: "#service-7",
+    id: 7,
   },
 ];
 

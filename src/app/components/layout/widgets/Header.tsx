@@ -14,8 +14,8 @@ export default function Header() {
   const isDashboard = pathname === "/dashboard";
 
   return (
-    <header className="flex p-3 lg:p-6 items-center justify-between fixed z-50 top-0 bg-white w-screen shadow-lg">
-      <Logo />
+    <header className="flex p-3 lg:p-6 items-center justify-between fixed z-50 top-0 bg-white w-full shadow-lg">
+      <Logo className="text-primary" />
       <nav className="hidden lg:flex">
         <ul className="flex gap-4 flex-row capitalize">
           {navLinks.map((link) => (

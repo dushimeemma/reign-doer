@@ -23,17 +23,18 @@ export default function ServiceCard({
   const isEven = index % 2 == 0;
   return (
     <div
-      className={`w-screen flex ${
+      className={`w-full flex ${
         isEven ? "flex-col lg:flex-row-reverse" : "flex-col lg:flex-row"
       } justify-between items-center my-3`}
     >
-      <div className="w-full lg:flex-1 cursor-pointer">
+      <div className="w-[90%] lg:flex-1 cursor-pointer mx-6">
         <Image
           width={340}
           height={240}
           src={image}
           layout="responsive"
           alt="Web development Image"
+          className="rounded-[1.5rem] shadow-md"
         />
       </div>
       <div className={`flex-1 flex flex-col gap-4 mx-6`}>

@@ -16,7 +16,7 @@ export default function SeeMore({
 }: SeeMoreProps) {
   return (
     <button
-      className={`flex-1 flex flex-row items-center ${classNames}`}
+      className={`flex flex-row items-center ${classNames}`}
       onClick={onClick}
     >
       <span className="text-primary mr-2">{label ?? "See projects"}</span>
