@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header className="flex p-3 lg:p-6 items-center justify-between fixed z-50 top-0 bg-white w-screen shadow-lg">
-      <Logo />
+      <Logo className="text-primary" />
       <nav className="hidden lg:flex">
         <ul className="flex gap-4 flex-row capitalize">
           {navLinks.map((link) => (

@@ -2,17 +2,17 @@ const blogs = [
   {
     id: 1,
     description:
-      "Revolutionizing Development: Unveiling the Secrets Behind Our Latest Software Solution",
-    image: "/blog-1.png",
+      "Revolutionizing Dining: Unveiling the Excellence of the Lycee de Kigali Dining Hall Experience",
+    image: "/dining-hall.png",
     month: "1 month ago",
     minutes: "8 minutes",
-    imageAlt: "Blog one",
+    imageAlt: "Dining hall LDK",
   },
   {
     id: 2,
     description:
-      "Unlocking Innovation: The Journey of Crafting Cutting-Edge Software Solutions",
-    image: "/blog-2.png",
+      "Unlocking Potential: The Journey of Transforming Learning Spaces at EP Munyinya Classroom",
+    image: "/classroom.png",
     month: "1 month ago",
     minutes: "8 minutes",
     imageAlt: "Blog two",
@@ -20,8 +20,8 @@ const blogs = [
   {
     id: 3,
     description:
-      "Navigating the Digital Frontier: Insights from Our Software Agency's Latest Projects",
-    image: "/blog-3.png",
+      "Navigating Global Impact: Insights from Good Neighbors International Offices' Latest Initiatives",
+    image: "/goodneighbor.png",
     month: "2 month ago",
     minutes: "9 minutes",
     imageAlt: "Blog three",
@@ -29,8 +29,8 @@ const blogs = [
   {
     id: 4,
     description:
-      "Exploring the Creativity and Craftsmanship of Our Software Agency's Team",
-    image: "/blog-4.png",
+      "Exploring the Excellence and Dedication of the GS Kabuga Community",
+    image: "/gs-kabuga.png",
     month: "2 month ago",
     minutes: "7 minutes",
     imageAlt: "Blog four",

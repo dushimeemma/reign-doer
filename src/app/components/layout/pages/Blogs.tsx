@@ -14,7 +14,7 @@ export default function Blogs() {
       <SubTitle text="Check this valuable insights" />
       <div className="w-full flex flex-col lg:flex-row justify-between my-6 gap-4">
         <Blog
-          classNames="flex-col justify-center  w-full lg:w-1/2 "
+          classNames="flex-col justify-center  w-full lg:w-1/2"
           textClassNames="w-full lg:w-[32vw] font-medium text-center"
           image={blogs[0].image}
           imageAlt={blogs[0].imageAlt}
@@ -32,10 +32,10 @@ export default function Blogs() {
               month={blog.month}
               minutes={blog.minutes}
               classNames="flex-col lg:flex-row items-center"
-              imageClassNames="w-full"
               textClassNames=" text-center lg:text-start"
               widthSize={280}
               heightSize={179}
+              layout="fixed"
             />
           ))}
           <SeeMore label="Read more blogs" classNames="self-end" />
